@@ -44,7 +44,7 @@ pip3 install neovim
 mkdir $HOME/.config
 cd $HOME/.config
 git init
-git remote add origin https://2346725982:z64211853@github.com/2346725982/setup_config.git 
+git remote add origin https://2346725982@github.com/2346725982/setup_config.git 
 git pull origin master
 
 # install programs
