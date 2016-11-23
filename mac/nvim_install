@@ -1,0 +1,3 @@
+brew install neovim/neovim/neovim
+pip install neovim
+pip3 install neovim

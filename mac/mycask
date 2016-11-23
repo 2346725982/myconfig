@@ -1,0 +1,11 @@
+brew install brew-cask
+
+brew cask install google-chrome
+brew cask install google-drive
+brew cask install evernote
+brew cask install omnifocus
+brew cask install alfred
+brew cask install flux
+brew cask install spectacle
+brew cask install iterm2
+brew cask cleanup
