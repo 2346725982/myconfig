@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/Wang/Documents/6140_Machine_Learning/linear_regression'
+let g:netrw_dirhist_2='/Users/Wang/Documents/6140_Machine_Learning/.git'
+let g:netrw_dirhist_3='/Users/Wang/.oh-my-zsh/themes'
+let g:netrw_dirhist_4='/Users/Wang/Documents/tensorflow'
+let g:netrw_dirhist_5='/Users/Wang/.vim'
