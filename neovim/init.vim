@@ -14,4 +14,4 @@ source $HOME/.myconfig/neovim/plugin_setting.vimrc
 source $HOME/.myconfig/neovim/key_mapping.vimrc
 
 " line.vimrc holds line status configuration
-source $HOME/.myconfig/neovim/statusline.vimrc
+" source $HOME/.myconfig/neovim/statusline.vimrc

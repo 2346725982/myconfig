@@ -33,6 +33,8 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
+set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
+
 " unicode symbols
 " let g:airline_left_sep = ''
 " let g:airline_symbols.crypt = '🔒'

@@ -30,11 +30,6 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-" Tab, deprecated, using split and buffer
-" nmap T :tabedit<CR>
-" nmap H gT
-" nmap L gt
-
 " Split
 nmap <C-J> <C-W>j
 nmap <C-K> <C-W>k
@@ -69,19 +64,3 @@ nnoremap <Leader>a :Ack!<Space>
 """ expand region
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
-
-""" Easy-Motion
-" s{char}{char} to move to {char}{char}
-nmap s <Plug>(easymotion-overwin-f2)
-
-" <Leader>f{char} to move to {char}
-map  <Leader>F <Plug>(easymotion-bd-f)
-nmap <Leader>F <Plug>(easymotion-overwin-f)
-
-" Move to line
-map <Leader>L <Plug>(easymotion-bd-jk)
-nmap <Leader>L <Plug>(easymotion-overwin-line)
-
-" Move to word
-map  <Leader>W <Plug>(easymotion-bd-w)
-nmap <Leader>W <Plug>(easymotion-overwin-w)

@@ -34,12 +34,4 @@ Plug 'ludovicchabant/vim-gutentags', { 'for': 'cpp' }  " Generate tags
 Plug 'majutsushi/tagbar', { 'for': 'cpp' }             " Tagbar
 Plug 'Rip-Rip/clang_complete', { 'for': 'cpp', 'do': 'make install'} " Completion
 
-""" Deprecated
-" Easymotion
-" Plug 'easymotion/vim-easymotion'
-
-" Snippet
-" Plug 'SirVer/ultisnips'           " Track the engine.
-" Plug 'honza/vim-snippets'         " Snippets are separated from the engine
-
 call plug#end()
