@@ -5,11 +5,11 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """ Color Scheme
+set termguicolors
 " let g:gruvbox_italic=1
 " let g:gruvbox_termcolors=256
 " colorscheme gruvbox
 
-set termguicolors
 " colorscheme NeoSolarized
 " let g:neosolarized_contrast = "high"
 " let g:neosolarized_visibility = "normal"
@@ -33,7 +33,7 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
+" set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
 
 " unicode symbols
 " let g:airline_left_sep = ''
@@ -139,9 +139,9 @@ let g:deoplete#enable_at_startup=1
 let g:deoplete#enable_smart_case=1
 let g:deoplete#auto_complete_start_length=1
 let g:deoplete#sources = {}
-let g:deoplete#sources.py = ['jedi', 'tag']
+let g:deoplete#sources.py = ['jedi']
 let g:deoplete#sources.cpp = ['tag']
-let b:deoplete_ignore_sources = ['buffer']
+" let b:deoplete_ignore_sources = ['buffer']
 
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><BS>  deoplete#mappings#smart_close_popup()."\<C-h>"
@@ -154,6 +154,7 @@ endfunction
 
 """ Neomake
 " let g:neomake_open_list=2
+" autocmd! BufWritePost * Neomake
 
 """ SimpylFold
 let g:SimpylFold_docstring_preview = 1
@@ -171,7 +172,3 @@ let g:SimpylFold_fold_import = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" NerdTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-"" Neomake
-autocmd! BufWritePost * Neomake
-
