@@ -1,8 +1,15 @@
 call plug#begin('~/.config/nvim/plugged')
 
 """ Color Schema
-" Plug 'morhetz/gruvbox'                  " grvvbox, changable
 Plug 'iCyMind/NeoSolarized'               " Neo solarized
+
+""" Python
+Plug 'davidhalter/jedi-vim',   " Completion
+Plug 'zchee/deoplete-jedi',    " Completion
+
+""" C++
+Plug 'majutsushi/tagbar', { 'for': 'cpp' }             " Tagbar
+Plug 'Rip-Rip/clang_complete', { 'for': 'cpp', 'do': 'make install'} " Completion
 
 """ Visualization
 Plug 'Yggdroot/indentLine'                " Highlight Indent
@@ -29,14 +36,5 @@ Plug 'kien/ctrlp.vim'                                         " CtrlP
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }        " Nerdtree
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Auto Completion
-
-""" Python
-Plug 'tmhedberg/SimpylFold', { 'for': 'python' }  " Fold
-Plug 'davidhalter/jedi-vim', { 'for': 'python' }  " Completion
-Plug 'zchee/deoplete-jedi', { 'for': 'python' }   " Completion
-
-""" C++
-Plug 'majutsushi/tagbar', { 'for': 'cpp' }             " Tagbar
-Plug 'Rip-Rip/clang_complete', { 'for': 'cpp', 'do': 'make install'} " Completion
 
 call plug#end()

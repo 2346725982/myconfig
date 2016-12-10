@@ -134,14 +134,7 @@ let g:UltiSnipsEditSplit="vertical"
 set completeopt=longest,menuone
 autocmd FileType python setlocal completeopt-=preview
 
-set runtimepath+=~/.config/nvim/bundle/deoplete.nvim/
 let g:deoplete#enable_at_startup=1
-let g:deoplete#enable_smart_case=1
-let g:deoplete#auto_complete_start_length=1
-let g:deoplete#sources = {}
-let g:deoplete#sources.py = ['jedi']
-let g:deoplete#sources.cpp = ['tag']
-" let b:deoplete_ignore_sources = ['buffer']
 
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><BS>  deoplete#mappings#smart_close_popup()."\<C-h>"
@@ -151,24 +144,3 @@ inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function() abort
   return deoplete#mappings#close_popup() . "\<CR>"
 endfunction
-
-""" Neomake
-" let g:neomake_open_list=2
-" autocmd! BufWritePost * Neomake
-
-""" SimpylFold
-let g:SimpylFold_docstring_preview = 1
-let g:SimpylFold_fold_docstring = 0
-let g:SimpylFold_fold_import = 0
-
-""" clang_complete
-" path to directory where library can be found
-" let g:clang_library_path='/usr/lib/llvm-3.8/lib'
-" or path directly to the library file
-" let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Command
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" NerdTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

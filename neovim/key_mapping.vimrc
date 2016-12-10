@@ -7,32 +7,19 @@ let mapleader="\<SPACE>"
 map <F2> :NERDTreeToggle<CR>
 
 "" CtrlP (Plug-in)
-nnoremap <F3> :CtrlPMRUFiles<CR>
-
-" (deprecated)
-" nnoremap <Leader>o :CtrlP<CR>                     " Open Menu
-" nnoremap <Leader>b :CtrlPBuffer<CR>               " Buffer menu
-" nnoremap <Leader>m :CtrlPMRUFiles<CR>             " Most recently used
+nnoremap <Leader>o :CtrlP<CR>                     " Open Menu
+nnoremap <Leader>b :CtrlPBuffer<CR>               " Buffer menu
+nnoremap <Leader>m :CtrlPMRUFiles<CR>             " Most recently used
 
 " Auto-format (Plug-in)
 nnoremap <F4> :Neoformat<CR>
 inoremap <F4> <Esc>:Neoformat<CR>i
 
-" Make (Plug-in)
-nnoremap <F5> :Neomake<CR>
-inoremap <F5> <Esc>:Neomake<CR>i
-
 " Toggle highlight search
-nnoremap <F9> :set hlsearch!<CR>
+nnoremap <F3> :set hlsearch!<CR>
 
 "" Tagbar (Plug-in)
 map <F10> :TagbarToggle<CR>
-
-" Terminal (deprecated)
-" nnoremap <F5> :below 10sp term://$SHELL<CR>i
-" inoremap <F5> <Esc>:below 10sp term://$SHELL<CR>i
-" tnoremap <F5> <C-\><C-n>:q<CR>
-" tnoremap <Esc> <C-\><C-n>
 
 " Save
 nmap <leader>w :update<CR>
@@ -57,10 +44,6 @@ imap <C-J> <Esc><C-W>j
 imap <C-K> <Esc><C-W>k
 imap <C-L> <Esc><C-W>l
 imap <C-H> <Esc><C-W>h
-" tmap <C-J> <C-\><C-n><C-W>j
-" tmap <C-K> <C-\><C-n><C-W>k
-" tmap <C-L> <C-\><C-n><C-W>l
-" tmap <C-H> <C-\><C-n><C-W>h
 
 "" Ack (Plug-in)
 nnoremap <Leader>a :Ack!<Space>
