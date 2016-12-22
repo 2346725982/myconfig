@@ -3,16 +3,7 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Setting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 """ Color Scheme
-set termguicolors
-" let g:gruvbox_italic=1
-" let g:gruvbox_termcolors=256
-" colorscheme gruvbox
-
-" colorscheme NeoSolarized
-" let g:neosolarized_contrast = "high"
-" let g:neosolarized_visibility = "normal"
 
 """ Visualization
 "" Airline
@@ -27,60 +18,6 @@ let g:airline_mode_map = {
       \ 'V'  : 'V',
       \ 's'  : 'S',
       \ 'S'  : 'S'  }
-
-" air-line
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-
-" set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
-
-" unicode symbols
-" let g:airline_left_sep = ''
-" let g:airline_symbols.crypt = '🔒'
-" let g:airline_symbols.linenr = '␊'
-" let g:airline_symbols.linenr = '¶'
-" let g:airline_symbols.maxlinenr = ''
-" let g:airline_symbols.branch = '⎇'
-" let g:airline_symbols.spell = 'Ꞩ'
-" let g:airline_symbols.notexists = '∄'
-" let g:airline_symbols.whitespace = 'Ξ'
-
-" let g:airline_theme= 'solarized'
-" let g:airline_theme= 'gruvbox'
-" let g:airline_theme= 'wombat'
-" let g:airline_theme='powerlineish'
-
-" let g:airline_section_z=''
-
-"  (mode, crypt, paste, spell, iminsert)
-" let g:airline_section_a="mode"
-
-"  (hunks, branch)
-" let g:airline_section_b="%{fugitive#statusline()}"
-
-"  (bufferline or filename)
-"let g:airline_section_c="%t"
-
-"  (readonly, csv)
-" let g:airline_section_gutter="%m%r"
-
-"  (tagbar, filetype, virtualenv)
-" let g:airline_section_x=""
-
-"  (fileencoding, fileformat)
-" let g:airline_section_y=""
-
-"  (percentage, line number, column number)
-" let g:airline_section_z="%v,%l/%L|%P"
-
-"  (ycm_error_count, syntastic, eclim)
-" let g:airline_section_error
-
-"  (ycm_warning_count, whitespace)
-" let g:airline_section_warning
-
-" let g:airline#extensions#tabline#enabled = 1
 
 """ Developing Tools
 "" HiCursorWords
@@ -102,12 +39,16 @@ let g:NERDTrimTrailingWhitespace = 1  " Enable trimming of trailing whitespace w
 let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }  " Add your own custom formats or override the defaults
 
 """ Developing Environment
+"" Auto pairs
+let g:AutoPairsShortcutJump='<c-n>'
+
 "" NerdTree
 let NERDTreeIgnore = ['\.pyc$', 'tags\.*']
 
 "" CtrlP
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+set wildignore+=*/tags/*                     " Tags files
 set wildignore+=*.pyc                        " Compile files
 
 let g:ctrlp_lazy_update = 1
@@ -121,14 +62,6 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_custom_ignore = {
   \ 'file': '\v(\.cpp|\.h|\.hh|\.cxx)@<!$'
   \ }
-
-"" Ultisnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
 
 "" deoplete
 set completeopt=longest,menuone

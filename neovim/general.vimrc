@@ -1,6 +1,8 @@
 syntax enable
 
+set termguicolors
 set background=dark
+
 " => Tab, Indent, Text
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set smarttab            " Be smart when using tabs
@@ -11,13 +13,9 @@ set shiftwidth=4        " Indentation amount for < and > commands.
 set autoindent          " Auto indent
 set smartindent         " Smart indent
 
-" set colorcolumn=+1,+2,+3  " highlight three columns after 'textwidth'
-" set colorcolumn=80
-" highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
-
 set wrap
 set linebreak
-set nolist  " list disables linebreak
+set nolist              " list disables linebreak
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set showcmd             " Show (partial) command in status line.
@@ -58,7 +56,3 @@ set magic               " Use 'magic' patterns (extended regular expressions).
 " Spell
 set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 syn match myExCapitalWords +\<\w*[A-Z]\S*\>+ contains=@NoSpell
-
-" Folding
-set nofoldenable        "dont fold by default
-set foldmethod=indent   "fold based on indent
