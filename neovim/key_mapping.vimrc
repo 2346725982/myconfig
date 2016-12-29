@@ -1,10 +1,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """               Function shortcut
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <F2> :NERDTreeToggle<CR>     " Toggle NerdTree (Plug-in)
-nmap <F3> :set hlsearch!<CR>     " Toggle highlight search
-nmap <F4> :Neoformat<CR>         " Auto-format (Plug-in)
-map <F10> :TagbarToggle<CR>      " Toggle Tagbar (Plug-in)
+map <F2> :NERDTreeToggle<CR>
+map <F3> :set hlsearch!<CR>
+nmap <F4> :Neoformat<CR>
+map <F10> :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """               Nomal key shortcut
@@ -35,9 +35,9 @@ let mapleader="\<SPACE>"
 nnoremap <Leader>a :Ack!<Space>
 
 "" CtrlP (Plug-in)
-nmap <Leader>o :CtrlP<CR>              " Open Menu
-nmap <Leader>b :CtrlPBuffer<CR>        " Buffer menu
-nmap <Leader>m :CtrlPMRUFiles<CR>      " Most recently used
+nmap <Leader>o :CtrlP<CR>
+nmap <Leader>b :CtrlPBuffer<CR>
+nmap <Leader>m :CtrlPMRUFiles<CR>
 
 " Save
 nmap <leader>w :update<CR>

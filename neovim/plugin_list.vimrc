@@ -4,12 +4,12 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'iCyMind/NeoSolarized'               " Neo solarized
 
 """ Python
-Plug 'davidhalter/jedi-vim',   " Completion
-Plug 'zchee/deoplete-jedi',    " Completion
+Plug 'davidhalter/jedi-vim', {'for': 'python'},   " Completion
+Plug 'zchee/deoplete-jedi', {'for': 'python'},    " Completion
 
 """ C++
 Plug 'majutsushi/tagbar', { 'for': 'cpp' }             " Tagbar
-Plug 'Rip-Rip/clang_complete', { 'for': 'cpp', 'do': 'make install'} " Completion
+Plug 'justmao945/vim-clang', { 'for': 'cpp' }          " Completion
 
 """ Visualization
 Plug 'Yggdroot/indentLine'                " Highlight Indent

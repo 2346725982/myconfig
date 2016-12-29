@@ -6,14 +6,17 @@ function! JumpToLastEdit()
 endfunction
 
 if has("autocmd")
+" for html/rb files, 2 spaces
+autocmd Filetype cpp setlocal ts=2 sw=2 expandtab
+
+" for js/coffee/jade files, 4 spaces
+autocmd Filetype python setlocal ts=4 sw=4 sts=0 expandtab
+
 " Open spell checking when coding
   autocmd BufReadPre,BufNewFile *.c,*.h,*.java,*.py :setlocal spell spelllang=en
 
 " Jump to last edit
   autocmd BufReadPost * call JumpToLastEdit()
-
-" call SetSolarizedBackground()
-  " autocmd BufWritePost * call SetSolarizedBackground()
 
 " Auto make
   autocmd! BufWritePost * Neomake
