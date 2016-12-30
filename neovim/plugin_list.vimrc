@@ -3,14 +3,6 @@ call plug#begin('~/.config/nvim/plugged')
 """ Color Schema
 Plug 'iCyMind/NeoSolarized'               " Neo solarized
 
-""" Python
-Plug 'davidhalter/jedi-vim', {'for': 'python'},   " Completion
-Plug 'zchee/deoplete-jedi', {'for': 'python'},    " Completion
-
-""" C++
-Plug 'majutsushi/tagbar', { 'for': 'cpp' }             " Tagbar
-Plug 'justmao945/vim-clang', { 'for': 'cpp' }          " Completion
-
 """ Visualization
 Plug 'Yggdroot/indentLine'                " Highlight Indent
 Plug 'terryma/vim-expand-region'          " Expand Region
@@ -26,15 +18,25 @@ Plug 'ervandew/supertab'                  " Tab for Completion
 Plug 'airblade/vim-gitgutter'             " Gitgutter, show git diff
 Plug 'tpope/vim-fugitive'                 " Fugitive(git)
 
-Plug 'scrooloose/nerdcommenter'           " Comment out, uncomment
-Plug 'sbdchd/neoformat'                   " Tool for formatting
-Plug 'neomake/neomake'                    " Syntax Checking
-Plug 'c0r73x/neotags.nvim'                " Tags (default disabled)
-
 Plug 'mileszs/ack.vim'                                        " Ack, search in project
 Plug 'kien/ctrlp.vim'                                         " CtrlP
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }        " Nerdtree
 
+Plug 'scrooloose/nerdcommenter'           " Comment out, uncomment
+Plug 'sbdchd/neoformat'                   " Tool for formatting
+Plug 'neomake/neomake'                    " Syntax Checking
+
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Auto Completion
 
+""" Python
+Plug 'davidhalter/jedi-vim', {'for': 'python'},   " Completion
+Plug 'zchee/deoplete-jedi', {'for': 'python'},    " Completion
+
+""" C++
+Plug 'majutsushi/tagbar', { 'for': 'cpp' }             " Tagbar
+Plug 'c0r73x/neotags.nvim'                             " Tags (default disabled)
+Plug 'justmao945/vim-clang', { 'for': 'cpp' }          " Completion
+
 call plug#end()
+
+filetype plugin indent on
