@@ -32,7 +32,8 @@ let g:ctrlp_custom_ignore = {
             \ }
 
 "" Deoplete
-set completeopt=menuone,longest
+set completeopt=menuone,longest,noinsert
+set completeopt-=preview
 
 let g:deoplete#enable_at_startup=1
 let g:deoplete#enable_smart_case=1

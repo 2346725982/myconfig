@@ -39,10 +39,14 @@ nmap <Leader>o :CtrlP<CR>
 nmap <Leader>b :CtrlPBuffer<CR>
 nmap <Leader>m :CtrlPMRUFiles<CR>
 
+" Esc
+" alternative, ;;
+imap ii <Esc>
+
 " Save
 nmap <leader>w :update<CR>
 
-" Exit
+" Exit butffer
 nmap <Leader>q :q<CR>
 
 " Copy & paste to system clipboard with <Space>p and <Space>y
