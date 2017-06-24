@@ -1,3 +1,6 @@
+"" Super Tab
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
 "" NERD Commenter
 let g:NERDSpaceDelims = 1             " Add spaces after comment delimiters by default
 let g:NERDCompactSexyComs = 1         " Use compact syntax for prettified multi-line comments
@@ -32,7 +35,7 @@ let g:ctrlp_custom_ignore = {
             \ }
 
 "" Deoplete
-set completeopt=menuone,longest,noinsert
+set completeopt=menu,menuone,longest
 set completeopt-=preview
 
 let g:deoplete#enable_at_startup=1
@@ -44,7 +47,7 @@ inoremap <expr><BS>  deoplete#mappings#smart_close_popup()."\<C-h>"
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function() abort
-    return deoplete#mappings#close_popup() . "\<CR>"
+    return deoplete#close_popup() . "\<CR>"
 endfunction
 
 "" Neoformat

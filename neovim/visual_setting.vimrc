@@ -1,4 +1,5 @@
 "" Color Scheme
+colorscheme NeoSolarized
 
 "" Airline
 let g:airline_mode_map = {
@@ -11,6 +12,8 @@ let g:airline_mode_map = {
             \ 'V'  : 'V',
             \ 's'  : 'S',
             \ 'S'  : 'S'  }
+
+let g:airline_theme='wombat'
 
 "" HiCursorWords
 let g:HiCursorWords_delay = 200

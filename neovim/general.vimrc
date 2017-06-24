@@ -28,7 +28,6 @@ set textwidth=0         " Hard-wrap long lines as you type them.
 
 set noerrorbells        " No beeps.
 set modeline            " Enable modeline.
-set esckeys             " Cursor keys in insert mode.
 set linespace=0         " Set line-spacing to minimum.
 set nojoinspaces        " Prevents inserting two spaces after punctuation on a join (J)
 
@@ -54,5 +53,5 @@ set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 set magic               " Use 'magic' patterns (extended regular expressions).
 
 " Spell
-set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
-syn match myExCapitalWords +\<\w*[A-Z]\S*\>+ contains=@NoSpell
+" set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
+" syn match myExCapitalWords +\<\w*[A-Z]\S*\>+ contains=@NoSpell

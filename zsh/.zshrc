@@ -1,13 +1,16 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Wang/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
 # ZSH_THEME="af-magic"
+# ZSH_THEME="amuse"
+# ZSH_THEME="avit"
+ZSH_THEME="af-magic"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -87,4 +90,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Optionally set DEFAULT_USER in ~/.zshrc to your regular username to hide the
 # “user@hostname” info when you’re logged in as yourself on your local machine.
-DEFAULT_USER="Wang"
+DEFAULT_USER="zetao_wang"

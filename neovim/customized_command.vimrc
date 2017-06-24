@@ -13,7 +13,7 @@ if has("autocmd")
     autocmd Filetype python setlocal ts=4 sw=4 sts=0 expandtab
 
     " Open spell checking when coding
-    autocmd BufReadPre,BufNewFile *.c,*.cpp,*.h,*.java,*.py :setlocal spell spelllang=en
+    " autocmd BufReadPre,BufNewFile *.c,*.cpp,*.h,*.java,*.py :setlocal spell spelllang=en
 
     " Jump to last edit
     autocmd BufReadPost * call JumpToLastEdit()

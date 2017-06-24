@@ -32,7 +32,7 @@ imap <C-H> <Esc><C-W>h
 let mapleader="\<SPACE>"
 
 "" Ack (Plug-in)
-nnoremap <Leader>a :Ack!<Space>
+nmap <Leader>a :Ack!<Space>
 
 "" CtrlP (Plug-in)
 nmap <Leader>o :CtrlP<CR>
@@ -41,7 +41,7 @@ nmap <Leader>m :CtrlPMRUFiles<CR>
 
 " Esc
 " alternative, ;;
-imap ii <Esc>
+imap jj <Esc>
 
 " Save
 nmap <leader>w :update<CR>
