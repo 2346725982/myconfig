@@ -1,6 +1,7 @@
 "" deoplete-clang
 let g:deoplete#sources#clang#libclang_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 let g:deoplete#sources#clang#clang_header='/Library/Developer/CommandLineTools/usr/lib/clang'
+let g:deoplete#sources#clang#clang_complete_database = '$HOME/airlab/repos/bloodhound-agent'
 
 "" neoformat
 let g:neoformat_cpp_clangformat= {
@@ -16,11 +17,6 @@ let g:neomake_cpp_clang_maker = {
             \ 'args': ['-Wall', '-Wextra', '-Weverything', '-pedantic', '-Wno-sign-conversion'],
             \ }
 let g:neomake_cpp_customized_maker= { 'exe': 'make' }
-
-"" vim-clang
-" let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
-" let g:clang_cpp_options = '-stdlib=libc++'
-" let g:clang_cpp_completeopt = 'longest,menuone'
 
 "" atags
 let g:atags_build_commands_list = [

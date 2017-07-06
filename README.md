@@ -1,5 +1,6 @@
 # My personal config backup
 
 Including:
-- tmux
 - neovim
+- oh-my-zsh
+- tmux

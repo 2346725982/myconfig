@@ -38,7 +38,6 @@ Plug 'zchee/deoplete-jedi', {'for': 'python'},    " Completion
 
 """ C++
 Plug 'majutsushi/tagbar', { 'for': 'cpp' }             " Tagbar
-Plug 'vim-scripts/a.vim', { 'for': 'cpp' }             " Switch between header and source
 Plug 'zchee/deoplete-clang', { 'for': 'cpp' }          " Completion
 
 call plug#end()

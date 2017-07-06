@@ -59,6 +59,7 @@ plugins=(git zsh-syntax-highlighting z osx)
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export TREEHOUSE_PATH="$HOME/airlab/repos/treehouse"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -87,6 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vim="nvim"
 
 # Optionally set DEFAULT_USER in ~/.zshrc to your regular username to hide the
 # “user@hostname” info when you’re logged in as yourself on your local machine.
