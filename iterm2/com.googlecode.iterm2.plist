@@ -11,7 +11,11 @@
 	<key>Default Bookmark Guid</key>
 	<string>287EF251-E52B-4E62-AB4A-B3114E6F6D8B</string>
 	<key>HideTab</key>
-	<false/>
+	<true/>
+	<key>HideTabCloseButton</key>
+	<true/>
+	<key>HideTabNumber</key>
+	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
@@ -52,15 +56,19 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1161 888 796 473 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>59 6 1246 1406 0 0 2560 1417 </string>
+	<string>59 952 570 452 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>59 311 490 398 0 0 2560 1417 </string>
+	<string>59 325 490 377 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>59 -539 1246 706 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>59 710 1246 706 0 0 2560 1417 </string>
+	<string>1310 27 1246 1385 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>1310 1008 490 398 0 0 2560 1417 </string>
+	<key>NeverWarnAboutShortLivedSessions_287EF251-E52B-4E62-AB4A-B3114E6F6D8B</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_287EF251-E52B-4E62-AB4A-B3114E6F6D8B_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -740,7 +748,9 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/zetao_wang/Desktop</string>
+	<string>~/.myconfig/iterm2</string>
+	<key>QuitWhenAllWindowsClosed</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -750,11 +760,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-01T08:15:50Z</date>
+	<date>2017-08-02T23:02:33Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
+	<key>TabStyle</key>
+	<integer>2</integer>
+	<key>TabViewType</key>
+	<integer>2</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
