@@ -59,8 +59,19 @@ plugins=(git zsh-syntax-highlighting z osx)
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-export TREEHOUSE_PATH="$HOME/airlab/repos/treehouse"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+# path setting for airbnb projects
+export TREEHOUSE_PATH="$HOME/airlab/repos/treehouse"
+export JAVA7_HOME='/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home'
+export JAVA8_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home'
+export JAVA_HOME=$JAVA8_HOME
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH="$PATH:$HOME/sysops/optica_tools"
+export AWS=inst.aws.us-east-1.prod.musta.ch
+
+# True for iterm2 + tmux + neovim
+export TERM=screen-256color
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,3 +104,5 @@ alias vim="nvim"
 # Optionally set DEFAULT_USER in ~/.zshrc to your regular username to hide the
 # “user@hostname” info when you’re logged in as yourself on your local machine.
 DEFAULT_USER="zetao_wang"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

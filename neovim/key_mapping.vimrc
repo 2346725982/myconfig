@@ -13,6 +13,11 @@ nmap <F10> :TagbarToggle<CR>
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
+nmap <C-j> <C-w><C-j>
+nmap <C-k> <C-w><C-k>
+nmap <C-l> <C-w><C-l>
+nmap <C-h> <C-w><C-h>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """               Leader key shortcut
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""

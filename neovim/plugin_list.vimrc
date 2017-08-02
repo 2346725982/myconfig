@@ -20,9 +20,14 @@ Plug 'airblade/vim-gitgutter'             " Gitgutter, show git diff
 Plug 'tpope/vim-fugitive'                 " Fugitive(git)
 Plug 'dbakker/vim-projectroot'            " Project root
 
-Plug 'mileszs/ack.vim'                                        " Ack, search in project
-Plug 'kien/ctrlp.vim'                                         " CtrlP
+" Plug 'mileszs/ack.vim'                                        " Ack, search in project
+" Plug 'kien/ctrlp.vim'                                         " CtrlP
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fzf
+Plug 'junegunn/fzf.vim'
+Plug 'jremmen/vim-ripgrep'                                    " ripgrep
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }        " Nerdtree
+Plug 'kien/ctrlp.vim'                                         " ctrlp
+
 
 Plug 'scrooloose/nerdcommenter'           " Comment out, uncomment
 Plug 'sbdchd/neoformat'                   " Tool for formatting

@@ -6,7 +6,7 @@ let g:deoplete#sources#clang#clang_complete_database = '$HOME/airlab/repos/blood
 "" neoformat
 let g:neoformat_cpp_clangformat= {
             \ 'exe': 'clang-format',
-            \ 'args': ['-style=Google',],
+            \ 'args': ['-style=Google'],
             \ }
 let g:neoformat_enabled_cpp = ['clangformat']
 
