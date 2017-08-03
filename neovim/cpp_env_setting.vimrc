@@ -18,12 +18,6 @@ let g:neomake_cpp_clang_maker = {
             \ }
 let g:neomake_cpp_customized_maker= { 'exe': 'make' }
 
-"" atags
-let g:atags_build_commands_list = [
-    \ 'ag -g "" | ctags -L - --fields=+l -f tags.tmp',
-    \ 'awk "length($0) < 400" tags.tmp > tags',
-    \ 'rm tags.tmp'
-    \ ]
-
 "" gen_tags
-let g:gen_tags#gtags_auto_gen = 1
+" let g:gen_tags#gtags_auto_gen = 1
+let g:gen_tags#ctags_use_cache_dir = 1

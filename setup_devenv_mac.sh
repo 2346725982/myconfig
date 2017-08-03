@@ -32,6 +32,7 @@ packages=(
     python3
     ripgrep
     tmux
+    global # GNU tagging system
 
     # C++ library
     clang-format
