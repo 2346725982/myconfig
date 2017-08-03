@@ -1,5 +1,0 @@
-ln $HOME/.myconfig/tmux/.tmux.conf $HOME/
-ln $HOME/.myconfig/zsh/.zshrc $HOME/
-
-mkdir -p $HOME/.config/nvim
-ln $HOME/.myconfig/neovim/init.vim $HOME/.config/nvim
