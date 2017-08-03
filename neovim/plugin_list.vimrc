@@ -28,7 +28,6 @@ Plug 'jremmen/vim-ripgrep'                                    " ripgrep
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }        " Nerdtree
 Plug 'kien/ctrlp.vim'                                         " ctrlp
 
-
 Plug 'scrooloose/nerdcommenter'           " Comment out, uncomment
 Plug 'sbdchd/neoformat'                   " Tool for formatting
 Plug 'neomake/neomake'                    " Syntax Checking
