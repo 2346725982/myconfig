@@ -2,6 +2,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 """ Color Schema
 Plug 'iCyMind/NeoSolarized'               " the only neovim solarized with weird borader
+Plug 'rakr/vim-one'                       " tired of solarized
+Plug 'joshdick/onedark.vim'               "
 
 """ Visualization
 Plug 'Yggdroot/indentLine'                " Highlight Indent

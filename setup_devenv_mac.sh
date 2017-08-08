@@ -32,6 +32,7 @@ packages=(
     python3
     ripgrep
     tmux
+    reattach-to-user-namespace # tmux-MacOSX-pasteboard
     global # GNU tagging system
 
     # C++ library

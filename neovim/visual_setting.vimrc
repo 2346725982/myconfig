@@ -1,5 +1,5 @@
 "" Color Scheme
-colorscheme NeoSolarized
+colorscheme Neosolarized
 
 "" Airline
 let g:airline_mode_map = {

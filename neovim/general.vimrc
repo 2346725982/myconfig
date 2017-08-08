@@ -48,3 +48,12 @@ set magic               " Use 'magic' patterns (extended regular expressions).
 " Spell
 " set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 " syn match myExCapitalWords +\<\w*[A-Z]\S*\>+ contains=@NoSpell
+
+" Copy/paste
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Yank text to the OS X clipboard
+noremap <leader>y "*y
+noremap <leader>yy "*Y
+
+" Preserve indentation while pasting text from the OS X clipboard
+noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
