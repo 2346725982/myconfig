@@ -7,8 +7,8 @@ set background=dark
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set smarttab            " Be smart when using tabs
 set expandtab           " Insert spaces when TAB is pressed.
-set tabstop=4           " Render TABs using this many spaces.
-set shiftwidth=4        " Indentation amount for < and > commands.
+set tabstop=2           " Render TABs using this many spaces.
+set shiftwidth=2        " Indentation amount for < and > commands.
 
 set autoindent          " Auto indent
 set smartindent         " Smart indent
@@ -45,15 +45,11 @@ set incsearch           " Incremental search.
 set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 set magic               " Use 'magic' patterns (extended regular expressions).
 
-" Spell
+" => Spell
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 " syn match myExCapitalWords +\<\w*[A-Z]\S*\>+ contains=@NoSpell
 
-" Copy/paste
+" => Copy/paste
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Yank text to the OS X clipboard
-noremap <leader>y "*y
-noremap <leader>yy "*Y
-
-" Preserve indentation while pasting text from the OS X clipboard
-noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+set clipboard=unnamed

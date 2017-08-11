@@ -24,3 +24,5 @@ let g:HiCursorWords_hiGroupRegexp = ''
 
 "" Highlight Indent
 let g:indentLine_enabled = 1
+
+""" Markdown

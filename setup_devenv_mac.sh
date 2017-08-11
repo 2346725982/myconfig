@@ -27,12 +27,16 @@ rm distribute_setup.py
 packages=(
     # dev tools
     ctags
-    fzf
+
     git
+    hub
+
     python3
-    ripgrep
+
+    ripgrep # <- silver searcher <- ack <- grep
+    fzf
+
     tmux
-    reattach-to-user-namespace # tmux-MacOSX-pasteboard
     global # GNU tagging system
 
     # C++ library
@@ -41,6 +45,7 @@ packages=(
 
     # others
     brew-cask
+    reattach-to-user-namespace # tmux-MacOSX-pasteboard
 
     # deprecated
     # ack
