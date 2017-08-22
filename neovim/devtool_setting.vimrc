@@ -13,35 +13,6 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }  " Add you
 "" Auto pairs
 let g:AutoPairsShortcutJump='<c-n>'
 
-"" NerdTree
-let NERDTreeIgnore = ['\.pyc$', 'tags\.*']
-
-"" CtrlP
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-set wildignore+=*/tags/*                     " Tags files
-set wildignore+=*.pyc                        " Compile files
-
-let g:ctrlp_lazy_update = 1
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-unlet g:ctrlp_custom_ignore
-let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-            \ 'file': '\v\.(exe|so|dll)$',
-            \ 'link': 'some_bad_symbolic_links',
-            \ }
-let g:ctrlp_custom_ignore = {
-            \ 'file': '\v(\.cpp|\.h|\.hh|\.cxx)@<!$'
-            \ }
-
-let g:ctrlp_match_window = 'top,order:btt,min:1,max:10,results:10'
-
-" Using cache
-let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-endif
-
 "" Deoplete
 set completeopt=menu,menuone,longest
 set completeopt-=preview

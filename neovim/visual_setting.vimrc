@@ -13,7 +13,8 @@ let g:airline_mode_map = {
             \ 's'  : 'S',
             \ 'S'  : 'S'  }
 
-let g:airline_theme='wombat'
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 
 "" HiCursorWords
 let g:HiCursorWords_delay = 200

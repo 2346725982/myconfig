@@ -53,3 +53,12 @@ set magic               " Use 'magic' patterns (extended regular expressions).
 " => Copy/paste
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set clipboard=unnamed
+
+" => Built-in plug setting
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" netrw
+let g:netrw_banner = 0       " remove directory banner
+let g:netrw_liststyle = 3    " tree view
+let g:netrw_browse_split = 4 " open in previous window
+let g:netrw_altv = 1
+let g:netrw_winsize = 15 " The width of the directory explorer can be fixed to x%
