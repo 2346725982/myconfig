@@ -12,11 +12,6 @@ nmap <F10> :TagbarToggle<CR>
 " Esc
 imap jj <Esc>
 
-" zoom in one pane, zoom out (set equal)
-nmap + <C-w>_<C-w>\| 
-nmap - <C-w>=
-
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """               Combined key shortcut
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""

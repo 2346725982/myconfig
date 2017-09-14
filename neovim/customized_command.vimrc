@@ -19,7 +19,7 @@ if has("autocmd")
     autocmd BufReadPost * call JumpToLastEdit()
 
     " Auto make
-    autocmd! BufWritePost * Neomake
+    " autocmd! BufWritePost * Neomake
 
     "" NerdTree
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

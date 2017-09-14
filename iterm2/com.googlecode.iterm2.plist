@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -10,11 +12,25 @@
 	<integer>1</integer>
 	<key>Default Bookmark Guid</key>
 	<string>287EF251-E52B-4E62-AB4A-B3114E6F6D8B</string>
+	<key>DisableFullscreenTransparency</key>
+	<true/>
+	<key>HideScrollbar</key>
+	<true/>
 	<key>HideTab</key>
-	<false/>
+	<true/>
 	<key>HideTabCloseButton</key>
 	<false/>
 	<key>HideTabNumber</key>
+	<false/>
+	<key>Hotkey</key>
+	<true/>
+	<key>HotkeyChar</key>
+	<integer>116</integer>
+	<key>HotkeyCode</key>
+	<integer>17</integer>
+	<key>HotkeyModifiers</key>
+	<integer>524576</integer>
+	<key>JobName</key>
 	<false/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
@@ -53,16 +69,21 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1161 980 770 381 0 0 2560 1417 </string>
+	<string>409 354 1016 502 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>59 -5 1246 1417 0 0 2560 1417 </string>
+	<string>59 501 490 377 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>59 325 490 377 0 0 2560 1417 </string>
+	<string>406 1040 490 377 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>59 -539 1246 706 0 0 1440 878 </string>
+	<string>59 5 1246 699 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1310 27 1246 1385 0 0 2560 1417 </string>
+	<string>1310 714 1246 699 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>1310 1008 490 398 0 0 2560 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_287EF251-E52B-4E62-AB4A-B3114E6F6D8B</key>
@@ -643,7 +664,7 @@
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
@@ -673,7 +694,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -714,6 +735,10 @@
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>521418992.52314597</real>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -749,8 +774,12 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>~/.myconfig/iterm2</string>
-	<key>QuitWhenAllWindowsClosed</key>
+	<key>Print In Black And White</key>
 	<true/>
+	<key>PromptOnQuit</key>
+	<false/>
+	<key>QuitWhenAllWindowsClosed</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -760,17 +789,27 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-03T23:03:17Z</date>
+	<date>2017-08-28T18:20:17Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>ShowBookmarkName</key>
+	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>TabStyle</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>UseBorder</key>
+	<false/>
+	<key>WindowNumber</key>
+	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.15</string>
 </dict>
