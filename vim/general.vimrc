@@ -1,6 +1,5 @@
 syntax enable
 
-set termguicolors
 set background=dark
 
 " => Tab, Indent, Text

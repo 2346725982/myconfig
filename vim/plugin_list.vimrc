@@ -30,8 +30,6 @@ Plug 'scrooloose/nerdcommenter'           " Comment out, uncomment
 Plug 'sbdchd/neoformat'                   " Tool for formatting
 " Plug 'neomake/neomake'                    " Syntax Checking
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Auto Completion
-
 Plug 'jsfaint/gen_tags.vim'               " Generate ctags
 
 """ Markdown
