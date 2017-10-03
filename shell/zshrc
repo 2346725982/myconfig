@@ -59,13 +59,6 @@ compdef _gnu_generic gdb
 # True color for iterm2 + tmux + neovim
 export TERM=screen-256color
 
-# editor overwrite default value
-# if ! type "$nvim" > /dev/null; then
-#   export EDITOR="nvim"
-# else
-#   export EDITOR="vim"
-# fi
-
 # dev env path setting for airbnb projects
 export TREEHOUSE_PATH="$HOME/airlab/repos/treehouse"
 export JAVA7_HOME='/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home'
@@ -154,3 +147,6 @@ source $HOME/air_config/publish.sh
 source $HOME/air_config/optica_alias.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

@@ -14,20 +14,21 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }  " Add you
 let g:AutoPairsShortcutJump='<c-n>'
 
 "" Deoplete
-set completeopt=menu,menuone,longest
-set completeopt-=preview
+" set completeopt=menu,menuone,longest
+" set completeopt-=preview
+" 
+" let g:deoplete#enable_at_startup=1
+" let g:deoplete#enable_smart_case=1
+" 
+" " <C-h>, <BS>: close popup and delete backword char.
+" inoremap <expr><BS>  deoplete#mappings#smart_close_popup()."\<C-h>"
+" 
+" " <CR>: close popup and save indent.
+" inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+" function! s:my_cr_function() abort
+"     return deoplete#close_popup() . "\<CR>"
+" endfunction
 
-let g:deoplete#enable_at_startup=1
-let g:deoplete#enable_smart_case=1
-
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><BS>  deoplete#mappings#smart_close_popup()."\<C-h>"
-
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function() abort
-    return deoplete#close_popup() . "\<CR>"
-endfunction
 
 "" Neoformat
 let g:neoformat_basic_format_align = 1 " Enable alignment

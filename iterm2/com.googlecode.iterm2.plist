@@ -10,6 +10,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>Default Bookmark Guid</key>
 	<string>287EF251-E52B-4E62-AB4A-B3114E6F6D8B</string>
 	<key>DisableFullscreenTransparency</key>
@@ -79,15 +81,15 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>999 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1123 775 1016 512 0 0 2560 1417 </string>
+	<string>410 183 1016 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>60 714 1246 699 0 0 2560 1417 </string>
+	<string>53 500 490 377 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>406 1040 490 377 0 0 2560 1417 </string>
+	<string>75 157 490 377 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>60 5 1246 699 0 0 2560 1417 </string>
+	<string>1307 714 1252 699 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>60 327 490 377 0 0 2560 1417 </string>
+	<string>1866 63 490 377 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>1310 1022 490 377 0 0 2560 1418 </string>
 	<key>NeverWarnAboutShortLivedSessions_287EF251-E52B-4E62-AB4A-B3114E6F6D8B</key>
@@ -414,6 +416,13 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x7f</string>
+				</dict>
+				<key>0x7f-0x80000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x1B 0x08</string>
 				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
@@ -793,7 +802,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-21T22:26:49Z</date>
+	<date>2017-10-01T19:43:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -817,6 +826,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.0</string>
+	<string>3.1.2</string>
 </dict>
 </plist>

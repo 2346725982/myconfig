@@ -1,5 +1,5 @@
 "" Color Scheme
-colorscheme Neosolarized
+" colorscheme Neosolarized
 
 "" Airline
 let g:airline_mode_map = {
@@ -13,7 +13,7 @@ let g:airline_mode_map = {
             \ 's'  : 'S',
             \ 'S'  : 'S'  }
 
-let g:airline_theme='solarized'
+" let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 
 "" HiCursorWords
