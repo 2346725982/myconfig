@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """               Function shortcut
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <F3> :set hlsearch!<CR>
+nmap <F5> :set hlsearch!<CR>
 nmap <F4> :Neoformat<CR>
 nmap <F10> :TagbarToggle<CR>
 
