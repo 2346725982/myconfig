@@ -1,48 +1,22 @@
 call plug#begin('~/.config/nvim/plugged')
 
-""" Color Schema
-Plug 'iCyMind/NeoSolarized'               " the only neovim solarized with weird borader
-
-
-""" Visualization
-" Plug 'Yggdroot/indentLine'                " Highlight Indent
-" Plug 'kshenoy/vim-signature'              " place, toggle and display marks
-" Plug 'ihacklog/HiCursorWords'             " HiCursorWords
-
-" Plug 'vim-airline/vim-airline'            " Airline
-" Plug 'vim-airline/vim-airline-themes'     " Airline themes
-
-""" Developing Tools
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""                       Developing Tools
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-nmap <leader>o :CtrlP<CR>
-nmap <leader>b :CtrlPBuffer<CR>
-nmap <leader>m :CtrlPMRU<CR>
-
-let g:ctrlp_root_markers = ['.ctrlp', '.git']
-let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:10'
-let g:ctrlp_custom_ignore = 'tmp$\|\.git$\|\.hg$\|\.svn$\|.rvm$|.bundle$\|vendor'
-let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
-
-" if executable('ag')
-"   ame thing (:le = :left = left-align given range; % = all lines):
-"   :%le
-" endif
-
-Plug 'ctrlpvim/ctrlp.vim'
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  Asynchronous Lint Engine
+"  https://github.com/w0rp/ale#usage-completion
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Show/Hide NERDTree
-nmap <F2> :NERDTreeToggle<CR>
-nmap <F3> :NERDTreeFind<CR>
+Plug 'w0rp/ale'
 
-" Automatically close vim if only NERDTree left
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  Syntax Highlight pack for MANY languages
+"  https://github.com/sheerun/vim-polyglot
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -65,6 +39,74 @@ Plug 'scrooloose/nerdtree'
 
 " Plug 'jsfaint/gen_tags.vim'               " Generate ctags
 " Plug 'Valloric/YouCompleteMe'             " Completion plugin
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""                       Editing Tools
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  Auto Save
+"  https://github.com/vim-scripts/vim-auto-save
+"
+"  Note: a simple vim plug to enable auto save
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:auto_save = 1                  " enable AutoSave on Vim startup
+let g:auto_save_in_insert_mode = 0   " do not save while in insert mode
+
+Plug 'vim-scripts/vim-auto-save'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  fzf.vim
+"  https://github.com/junegunn/fzf.vim
+"
+"  Note: depends on fzf (https://github.com/junegunn/fzf)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <Leader>t :Files<CR>
+nmap <Leader>r :Tags<CR>
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" nmap <leader>o :CtrlP<CR>
+" nmap <leader>b :CtrlPBuffer<CR>
+" nmap <leader>m :CtrlPMRU<CR>
+" 
+" let g:ctrlp_root_markers = ['.ctrlp', '.git']
+" let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:10'
+" let g:ctrlp_custom_ignore = 'tmp$\|\.git$\|\.hg$\|\.svn$\|.rvm$|.bundle$\|vendor'
+" let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+" set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
+
+" if executable('ag')
+"   ame thing (:le = :left = left-align given range; % = all lines):
+"   :%le
+" endif
+
+" Plug 'ctrlpvim/ctrlp.vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Show/Hide NERDTree
+nmap <F2> :NERDTreeToggle<CR>
+
+" Automatically close vim if only NERDTree left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+Plug 'scrooloose/nerdtree'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""                       Visualization
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'iCyMind/NeoSolarized'               " the only neovim solarized with weird borader
+Plug 'Yggdroot/indentLine'                " Highlight Indent
+Plug 'ihacklog/HiCursorWords'             " HiCursorWords
+
+" Plug 'kshenoy/vim-signature'              " place, toggle and display marks
+" Plug 'vim-airline/vim-airline'            " Airline
+" Plug 'vim-airline/vim-airline-themes'     " Airline themes
 
 call plug#end()
 

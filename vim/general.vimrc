@@ -55,7 +55,11 @@ set clipboard=unnamed
 
 " => Built-in plug setting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " netrw
+" NOTE: wanted to use this to replace NERDTree. Turned out too much work. Gave
+" up.
+" :help netrw for more details.
 let g:netrw_banner = 0       " remove directory banner
 let g:netrw_liststyle = 3    " tree view
 let g:netrw_browse_split = 4 " open in previous window

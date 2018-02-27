@@ -32,3 +32,6 @@ alias gmv='git mv'
 alias gp='git push'
 alias grm='git rm'
 alias gst='git status'
+
+# neovim to replace vim
+if type nvim > /dev/null 2>&1 ; then alias vim='nvim'; fi
