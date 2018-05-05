@@ -24,7 +24,7 @@ Plug 'sheerun/vim-polyglot'
 " Plug 'terryma/vim-expand-region'          " Expand Region
 " Plug 'ervandew/supertab'                  " Tab for Completion
 
-" Plug 'airblade/vim-gitgutter'             " Gitgutter, show git diff
+Plug 'airblade/vim-gitgutter'             " Gitgutter, show git diff
 " Plug 'tpope/vim-fugitive'                 " Fugitive(git)
 " Plug 'dbakker/vim-projectroot'            " Project root
 
@@ -101,6 +101,9 @@ Plug 'scrooloose/nerdtree'
 """                       Visualization
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'iCyMind/NeoSolarized'               " the only neovim solarized with weird borader
+
+let g:neosolarized_contrast = "high"
+
 Plug 'Yggdroot/indentLine'                " Highlight Indent
 Plug 'ihacklog/HiCursorWords'             " HiCursorWords
 

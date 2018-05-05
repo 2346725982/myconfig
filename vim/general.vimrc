@@ -51,7 +51,7 @@ set magic               " Use 'magic' patterns (extended regular expressions).
 
 " => Copy/paste
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " => Built-in plug setting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
